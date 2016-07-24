@@ -1,4 +1,6 @@
 # ccosse.github.io
 Public website<br>
 
-<a href="TuxMathScrabble-HTML5/tuxmathscrabble.html">Play TuxMathScrabble Online</a>
+<a href="http://www.asymptopia.org/TuxMathScrabble-2015">
+  Play TuxMathScrabble Online
+</a>
