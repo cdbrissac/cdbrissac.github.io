@@ -1,2 +1,2 @@
 # cdbrissac.github.io
-Recent work
+Recent work by Charles Brissac
