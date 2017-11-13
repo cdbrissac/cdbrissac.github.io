@@ -6,5 +6,6 @@ Screenshots of recent work
 <img src="images/nesvg_controls.png"/>
 <img src="images/carousel.png"/>
 <img src="images/cst.png"/>
+<img src="images/runninglog_051917a.png"/>
 <img src="images/colormyworld.png"/>
 <img src="images/lanwatch-2016.png"/>
