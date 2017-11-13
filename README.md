@@ -7,5 +7,6 @@ Screenshots of recent work
 <img src="images/carousel.png"/>
 <img src="images/cst.png"/>
 <img src="images/runninglog_051917a.png"/>
+<img src="images/parent-creditfeeder-dev-051417a.png"/>
 <img src="images/colormyworld.png"/>
 <img src="images/lanwatch-2016.png"/>
