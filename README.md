@@ -1,4 +1,4 @@
-# cdbrissac.github.io
+# ccosse.github.io
 Screenshots of recent work
 <img src="images/d3plot_090517f.png"/>
 <img src="images/d3plot_090617c.png"/>
