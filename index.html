@@ -1,5 +1,138 @@
 <!Doctype html>
+
 <head>
-<title>C. Coss\eacute;</title>
+	<meta charset="utf-8">
+	<title>C. Coss&eacute;</title>
+	<style>
+		html{
+			background-color: #FFF;
+		  font-family: Arial;
+			width:100%;
+		}
+		a{text-decoration:none}
+		.content{}
+		.imgbar{
+			background:#242424;
+			border:2px dashed #246624;
+			overflow:auto;
+			box-shadow:0 0 10px #000;
+		}
+		.imgbar ul {
+			display:table;
+			white-space:nowrap;
+			list-style:none;
+		}
+		.imgbar li {
+			padding:0px 10px;
+			display:table-cell;
+			text-align:center;
+		}
+		.barimg {
+		    border: 1px solid #ddd; /* Gray border */
+		    border-radius: 4px;  /* Rounded border */
+		    padding: 5px; /* Some padding */
+		    height: 260px; /* Set a small width */
+		}
+		</style>
+	<script src="http://d3js.org/d3.v4.min.js">
+		</script>
 </head>
-</html>
+
+<center>
+	<h3>ccosse.github.io</h3>
+	<br><br>
+	<div id="imgbar" class="imgbar">
+		<ul id="imgbar_ul"></ul>
+	</div>
+	<br>
+
+	<div id="content" class="content">
+	</div>
+
+	</center>
+
+<script>
+	bar_images=[
+		"./images/depthticker02.png",
+		"./images/d3plot_session.png",
+		"./images/thesis02.png",
+		"https://github.com/ccosse/parks/raw/master/pacmap/static/pacmap/screenshots/061816c.png",
+		"./images/mcs.png",
+		"./images/physics_based_simulation_04.gif",
+
+		"./images/parent-feeder.png",
+		"./images/colormyworld.png",
+		"./images/Screenshot-2018-2-14 ColorMyWorld.png",
+		"./images/serve.png",
+		"./images/Screenshot-2018-2-14 NeonTux.png",
+
+		"./images/physics_based_simulation_03.png",
+		"./images/physics_based_simulation_02.gif",
+		"./images/physics_based_simulation_01.png",
+
+		"./images/4_040207-8x2-fibers-hit-at-angle.png",
+		/*
+		"./images/7_g4humanbrainenergydeposit-081310b.png",
+		"./images/tuxwordsmith-greek.png",
+		"https://github.com/ccosse/stepintochinese/raw/master/stepintochinese.png",
+		"./images/mfc-firefox.png",
+		"./images/engaging_web_applications_01.png",
+		"./images/asymptopia-sphere.gif",
+		"./images/tux-rigging-anim.gif",
+		"./images/lcnm-rrt-nmsu-anim.gif",
+		"./images/gis_weather_web_apps.png",
+		"./images/lanwatch.png",
+		*/
+	];
+
+	var img_bar=d3.select("#imgbar")
+		.style("width",.95*window.innerWidth+"px")
+
+	var content_div=d3.select("#content")
+		.style("width",.5*window.innerWidth+"px")
+
+	for(var bar_img of bar_images){
+		d3.select("#imgbar_ul").append("li")
+			.append("img")
+				.attr("src",bar_img)
+				.attr("class","barimg")
+	}
+
+	var contents={
+			"Using the new Observables":{
+				"d3 observable test":"https://beta.observablehq.com/@ccosse/damped-lissajous-figures",
+			},
+			"Examples on bl.ocks.org":{
+				"d3 stratocaster prototype":"http://bl.ocks.org/ccosse/11760c7615c55882924e0e6d05817fea",
+				"pure css carousel":"http://bl.ocks.org/ccosse/2b78fe1e32583491ac4cc20905c305ec",
+				"bitcoin tool with d3":"http://bl.ocks.org/ccosse/d260d6dad7bf1f90d9c34d38fb2dffcf",
+				"customize select with d3":"http://bl.ocks.org/ccosse/05b5d77f17c36340ad44f47a9049ab8d",
+			},
+			"PyCon 2017 Poster & Related":{
+				"education project1":"https://netdispenser.github.io/",
+				"education project2":"http://www.creditfeed.me/",
+				"education project3":"http://meter.creditfeed.me/",
+			},
+			"PyCon 2018 Support & Related":{
+				"demo coming":"https://beta.observablehq.com",
+				"need link":"https://beta.observablehq.com",
+			},
+			"2017 Contribution to Sugarizer":{
+				"colormyworld":"https://ccosse.github.io/colormyworld/",
+			},
+			"Archived":{
+				"tuxmathscrabble":"http://ccosse.github.io/TuxMathScrabble-2015/",
+				"stepintochinese":"https://github.com/ccosse/stepintochinese",
+			},
+	}
+
+	for(var sec of d3.keys(contents)){
+		d3.select("#content").append("h3").html(sec);
+		for(var key of d3.keys(contents[sec])){
+			d3.select("#content").append("a")
+				.attr("href",contents[sec][key])
+				.html(key)
+			.append("br");
+		}
+	}
+	</script>
