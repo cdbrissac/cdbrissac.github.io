@@ -1,6 +1,6 @@
 # ccosse.github.io
 
-### Observables: github javascript notebooks
+### Using the new [Observables](https://beta.observablehq.com) platform:
 [d3 observable test](https://beta.observablehq.com/@ccosse/damped-lissajous-figures)
 
 ### Examples on bl.ocks.org
@@ -9,17 +9,18 @@
 [bitcoin tool with d3](http://bl.ocks.org/ccosse/d260d6dad7bf1f90d9c34d38fb2dffcf)
 [customize select with d3](http://bl.ocks.org/ccosse/05b5d77f17c36340ad44f47a9049ab8d)
 
-### PyCon 2017 Stuff
+### PyCon 2017 Poster & Related
 [education project1](https://netdispenser.github.io/)
 [education project2](http://www.creditfeed.me/)
 [education project3](http://meter.creditfeed.me/)
 
-### Contribution to [Sugarizer](http://sugarizer.org)
+### PyCon 2018 Support & Related
+[demo coming](https://beta.observablehq.com)
+[need link](https://beta.observablehq.com)
+
+### 2017 Contribution to [Sugarizer](http://sugarizer.org)
 [colormyworld](https://ccosse.github.io/colormyworld/)
 
-### Selections from the archive:
+### Archived:
 [tuxmathscrabble](http://ccosse.github.io/TuxMathScrabble-2015/)
 [stepintochinese](https://github.com/ccosse/stepintochinese)
-
-### PyCon 2018 Support
-[demo coming](https://beta.observablehq.com)
