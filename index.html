@@ -7,7 +7,6 @@
 		html{
 			background-color: #FFF;
 		  font-family: Arial;
-			font-size:14pt;
 			width:100%;
 		}
 		a{text-decoration:none}
@@ -35,6 +34,7 @@
 		    padding: 5px; /* Some padding */
 		    height: 260px; /* Set a small width */
 		}
+		.mylink{font-size:14pt;}
 		</style>
 	<script type="text/javascript" src="./dist/d3.v4.min.js"></script>
 </head>
@@ -144,6 +144,7 @@
 		for(var key of d3.keys(contents[sec])){
 			d3.select("#content").append("a")
 				.attr("href",contents[sec][key])
+				.attr("class","mylink")
 				.html(key)
 			.append("br");
 		}
