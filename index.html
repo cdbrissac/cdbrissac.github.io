@@ -98,8 +98,12 @@
 		.style("width",.5*window.innerWidth+"px")
 
 	for(var bar_img of bar_images){
-		d3.select("#imgbar_ul").append("li")
-			.append("img")
+		var dummy=d3.select("#imgbar_ul").append("li")
+			.append("a")
+				.attr("href",bar_img)
+				.attr("target","_blank")
+
+			dummy.append("img")
 				.attr("src",bar_img)
 				.attr("class","barimg")
 	}
