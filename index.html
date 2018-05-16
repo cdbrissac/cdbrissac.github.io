@@ -103,6 +103,13 @@
 				.attr("src",bar_img)
 				.attr("class","barimg")
 	}
+	var dummy=d3.select("#imgbar_ul").append("li")
+		.append("a")
+			.attr("href","./images/lanwatch.png")
+			.attr("target","_blank")
+	dummy.append("img")
+		.attr("src","./images/lanwatch.png")
+		.attr("class","barimg")	
 /*
 	d3.select("#content").append("h3").html("Latest work: d3plot");
 	d3.select("#content").append("img")
@@ -117,6 +124,7 @@
 				"d3js observable examples":"https://beta.observablehq.com/@ccosse",
 			},
 			"GitHub Projects":{
+				"Bitcoin Ticker and Depth Chart Example":"http://bl.ocks.org/ccosse/d260d6dad7bf1f90d9c34d38fb2dffcf",
 				"public repositories":"http://github.com/ccosse",
 			},
 			"PyCon 2017 Poster & Related":{
