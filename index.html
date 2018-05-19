@@ -1,148 +1,241 @@
-<!Doctype html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>C. Coss&eacute;</title>
-	<style>
-		html{
-			background-color: #FFF;
-		  font-family: Arial;
-			width:100%;
-		}
-		a{text-decoration:none}
-		.content{}
-		.imgbar{
-			background:#f8f8f8;
-			border:3px dashed #333333;
-			border-radius:10px;
-			overflow:auto;
-			/*box-shadow:0 0 10px #000;*/
-		}
-		.imgbar ul {
-			display:table;
-			white-space:nowrap;
-			list-style:none;
-		}
-		.imgbar li {
-			padding:0px 10px;
-			display:table-cell;
-			text-align:center;
-		}
-		.barimg {
-		    border: 1px solid #ddd; /* Gray border */
-		    border-radius: 4px;  /* Rounded border */
-		    padding: 5px; /* Some padding */
-		    height: 260px; /* Set a small width */
-		}
-		.mylink{font-size:14pt;}
-		</style>
-	<script type="text/javascript" src="./dist/d3.v4.min.js"></script>
+  <title>Résumé & Portfolio 2018</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+<body>
 
-<center>
-	<h3>ccosse.github.io</h3>
-	<br>
-	<div id="imgbar" class="imgbar">
-		<ul id="imgbar_ul"></ul>
-	</div>
-	<br>
+<div class="container" style="width:90%;overflow:auto">
 
-	<a href="https://docs.google.com/document/d/1jc-G_DBORvZMwyNkGpmVCxs5V-q3OmORty-im7TmHlU/edit?usp=sharing" target="_blank"><h2>R&eacute;sum&eacute;: Charlie Coss&eacute; 2018</h2></a>
 
-	<div id="content" class="content">
-	</div>
+			<table class="table">
+			<tr>
 
-	<h3>Javascript Portfolio Video</h3>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/0Za6c9QWKXo?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<td>
+			<div class="img-thumbnail">
+				<a href="https://ccosse.github.io/images/d3plot_session.png" target="_blank">
+				<img src="https://ccosse.github.io/images/d3plot_session.png" alt="D3Plot" style="height:300px">
+				</a>
+			</div>
+			<p class="text-justify">
+				<b class="text-primary">(2017-2018)</b>
+				D3Plot is a web-app remake of a legacy C program called
+				Histoscope written at Fermilab in the 90s. It sports 9 reusable widgets
+				and plots data either from files (.csv,.tsv) or multiple online sources
+				via websockets sources.  Click
+				<a href="https://beta.observablehq.com/@ccosse/histo1d">here</a>
+				for representative live online 1D-Histogram widget example with code.
+			</p>
+			</td>
 
-</center>
+			<td>
+			<div class="img-thumbnail">
+				<a href="https://ccosse.github.io/images/061816c.png" target="_blank">
+				<img src="https://ccosse.github.io/images/061816c.png" alt="Guyana PAC custom CMS/GIS website" style="height:300px">
+				</a>
+			</div>
+			<p class="text-justify">
+				<b class="text-primary">(2015-2016)</b>
+				Custom CMS and interactive GIS website for Guyana Protected
+				Areas Commission. Uses Django, Python, MySQL, Openlayers, ThreeJS,
+				JQuery and Bootstrap. Click
+				<a href="http://www.cdbrissac.net/pacmap">here</a> for live example.
+			</p>
+			</td>
 
-<script>
-	bar_images=[
-		"./images/depthticker02.png",
-		"./images/d3plot_session.png",
-		"./images/thesis02.png",
-		"./images/061816c.png",
-		"./images/mcs.png",
-		"./images/physics_based_simulation_04.gif",
+			<td>
+			<div class="img-thumbnail">
+				<a href="https://ccosse.github.io/images/depthticker02.png" target="_blank">
+				<img src="https://ccosse.github.io/images/depthticker02.png" alt="Crypto-currency ticker, data via GDAX API" style="height:300px">
+				</a>
+			</div>
+			<p class="text-justify">
+				<b class="text-primary">(2018)</b>
+				Crypto-currency ticker and depth chart using the GDAX API. Click
+				<a href="https://beta.observablehq.com/@ccosse/bitcoin-depth-ticker">
+				here</a> for live online example with code.
+			</p>
+			</td>
 
-		"./images/parent-feeder.png",
-		"./images/colormyworld.png",
-		"./images/Screenshot-2018-2-14 ColorMyWorld.png",
-		"./images/serve.png",
-		"./images/Screenshot-2018-2-14 NeonTux.png",
+			<td>
+			<div class="img-thumbnail">
+				<a href="https://ccosse.github.io/images/serve.png" target="_blank">
+				<img src="https://ccosse.github.io/images/serve.png" alt="Front page work on new neon-themed Math Scrabble Game" style="height:300px">
+				</a>
+			</div>
+			<p class="text-justify">
+				<b class="text-primary">(2017-2018)</b>
+				This is a new version of
+				<a href="http://ccosse.github.io/TuxMathScrabble-2015/">TuxMathScrabble
+				</a> called Neon Tux. Dynamic SVG graphics under development are
+				controlled by D3js and inspired by the neon lights of the
+				<a href="https://wikitravel.org/upload/shared/6/61/LasVegas_Riviera_Neon.JPG">
+				Riviera Casino</a> in Las Vegas, Nevada.
+			</p>
+			</td>
 
-		"./images/physics_based_simulation_03.png",
-		"./images/physics_based_simulation_02.gif",
-		"./images/physics_based_simulation_01.png",
+			<td>
+			<div class="img-thumbnail">
+				<a href="https://ccosse.github.io/images/Screenshot-2018-2-14%20NeonTux.png" target="_blank">
+				<img src="https://ccosse.github.io/images/Screenshot-2018-2-14%20NeonTux.png" alt="A reusable d3js web tool for editing SVG graphics" style="height:300px">
+				</a>
+			</div>
+			<p class="text-justify">
+				<b class="text-primary">(2017-2018)</b>
+				A reusable d3js web tool for editing SVG graphics.
+			</p>
+			</td>
 
-		"./images/4_040207-8x2-fibers-hit-at-angle.png",
-		"./images/pdx_guild_presentation.png",
-		/*
-		"./images/7_g4humanbrainenergydeposit-081310b.png",
-		"./images/tuxwordsmith-greek.png",
-		"https://github.com/ccosse/stepintochinese/raw/master/stepintochinese.png",
-		"./images/mfc-firefox.png",
-		"./images/engaging_web_applications_01.png",
-		"./images/asymptopia-sphere.gif",
-		"./images/tux-rigging-anim.gif",
-		"./images/lcnm-rrt-nmsu-anim.gif",
-		"./images/gis_weather_web_apps.png",
-		"./images/lanwatch.png",
-		*/
-	];
+			<td>
+			<div class="img-thumbnail">
+				<a href="https://ccosse.github.io/images/colormyworld.png" target="_blank">
+				<img src="https://ccosse.github.io/images/colormyworld.png" alt="ColorMyWorld Geography Scavenger Hunt Game" style="height:300px">
+				</a>
+			</div>
+			<p class="text-justify">
+				<b class="text-primary">(2017)</b>
+				ColorMyWorld is a geography scavenger hunt game developed for the Sugarizer platform. Version 1.0
+				was released on May 16 2018 and can be downloaded from
+				<a href="https://play.google.com/store/apps/details?id=org.olpc_france.sugarizer" target="_blank">Google</a>,
+				<a href="http://www.amazon.com/gp/product/B00NKK7PZA" target="_blank">Amazon</a>,
+				<a href="https://itunes.apple.com/us/app/sugarizer/id978495303" target="_blank">iTunes</a> and others.
+				Click <a href="https://try.sugarizer.org/activities/ColorMyWorld.activity/index.html target="_blank"">here</a> to try
+				live online example (Sugarizer version).  Click <a href="">here</a> to try latest GitHub version with
+				D3js Color Sequence Tool.
+			</p>
+			</td>
 
-	var img_bar=d3.select("#imgbar")
-		.style("width","100%")
+			<td>
+			<div class="img-thumbnail">
+				<a href="https://ccosse.github.io/images/Screenshot-2018-2-14%20ColorMyWorld.png" target="_blank">
+				<img src="https://ccosse.github.io/images/Screenshot-2018-2-14%20ColorMyWorld.png" alt="A reusable d3js web tool for generating color sequences" style="height:300px">
+				</a>
+			</div>
+			<p class="text-justify">
+				<b class="text-primary">(2017)</b>
+				A reusable d3js web tool for generating color sequences.
+			</p>
+			</td>
 
-	var content_div=d3.select("#content")
-		.style("width",.5*window.innerWidth+"px")
+			<td>
+			<div class="img-thumbnail">
+				<a href="https://ccosse.github.io/images/parent-feeder.png" target="_blank">
+				<img src="https://ccosse.github.io/images/parent-feeder.png" alt="NetDispenser edu-kiosk parent interface" style="height:300px">
+				</a>
+			</div>
+			<p class="text-justify">
+				<b class="text-primary">(2012-2018)</b>
+				Parent interface of <a href="http://www.creditfeed.me" target="_blank">Credit-Feeder website</a>,
+	      part of <a href="https://netdispenser.github.io" target="_blank">Project NetDispenser</a>, an edu-kiosk
+	      which has kids earn their internet access by completing educational activities.
+	      Click <a href="http://netdispenser.github.io" target="_blank">here</a> for more details.
+			</p>
+			</td>
 
-	for(var bar_img of bar_images){
-		var dummy=d3.select("#imgbar_ul").append("li")
-			.append("a")
-				.attr("href",bar_img)
-				.attr("target","_blank")
+			<td>
+			<div class="img-thumbnail">
+				<a href="https://ccosse.github.io/images/pdx_guild_presentation.png" target="_blank">
+				<img src="https://ccosse.github.io/images/pdx_guild_presentation.png" alt="Cyber-security application 2015-2016" style="height:300px">
+				</a>
+			</div>
+			<p class="text-justify">
+				<b class="text-primary">(2015-2016)</b>
+				Cyber-security application developed using D3js, Openlayers and Bootstrap.
+				The plotting functionalities are now handled by the new D3Plot widgets.
+				See <a href="https://youtu.be/0Za6c9QWKXo">video portfolio</a> for more.
+			</p>
+			</td>
 
-		dummy.append("img")
-			.attr("src",bar_img)
-			.attr("class","barimg")
-	}
+			<td>
+			<div class="img-thumbnail">
+				<a href="https://ccosse.github.io/images/physics_based_simulation_04.gif" target="_blank">
+				<img src="https://ccosse.github.io/images/physics_based_simulation_04.gif" alt="Silicon calorimeter with GEANT4 proton event" style="height:300px">
+				</a>
+			</div>
+			<p class="text-justify">
+				<b class="text-primary">(2008)</b>
+				The silicon calorimeter of the OASIS experiment with a physically accurate GEANT4 proton event overlaid.
+				OASIS = Orbiting Astrophysical obServatory In Space.
+			</p>
+			</td>
 
-	var contents={
-			"Testing the new Observables":{
-				"D3js observable examples":"https://beta.observablehq.com/@ccosse",
-			},
-			"GitHub Projects":{
-				"Public repositories":"http://github.com/ccosse",
-			},
-			"CSS3 Styling with D3js":{
-				"D3js custom select":"http://bl.ocks.org/ccosse/05b5d77f17c36340ad44f47a9049ab8d",
-			},
-			"PyCon 2017 Poster & Related":{
-				"Project@github":"https://netdispenser.github.io/",
-				"PyCon blurb":"https://us.pycon.org/2017/schedule/presentation/643/",
-			},
-                        "2018 Contribution to Sugarizer":{
-                                "ColorMyWorld":"https://ccosse.github.io/colormyworld/",
-                        },
-                        "OpenSource Education Software":{
-                                "TuxMathScrabble":"http://ccosse.github.io/TuxMathScrabble-2015/",
-                                "StepIntoChinese":"https://github.com/ccosse/stepintochinese",
-                        },
-			"PyCon 2018 Coding Support":{
-				"Poster":"https://ccosse.github.io/images/PyCon18_Poster.pdf"
-			},
-	}
+			<td>
+			<div class="img-thumbnail">
+				<a href="https://ccosse.github.io/images/mcs.png" target="_blank">
+				<img src="https://ccosse.github.io/images/mcs.png" alt="Simulation and visualization of muon camera system" style="height:300px">
+				</a>
+			</div>
+			<p class="text-justify">
+				<b class="text-primary">(2006)</b>
+				Simulation and visualization of passive camera system using cosmic-ray atmospheric muons to
+				detect nuclear contraband.  The muons are deflected when they traverse super-dense, high-Z
+				material.  Crossed planes of scintillating fiber optics enables localization of the material
+				within, say, a semi truck. This is the same technique recently used to discover new rooms in
+				Egyptian pyramids. C++, OpenSceneGraph, Motif, wxWidgets, Python.
+			</p>
+			</td>
 
-	for(var sec of d3.keys(contents)){
-		d3.select("#content").append("h2").html(sec);
-		for(var key of d3.keys(contents[sec])){
-			d3.select("#content").append("a")
-				.attr("href",contents[sec][key])
-				.attr("class","mylink")
-				.html(key)
-			.append("br");
-		}
-	}
-	</script>
+			<td>
+			<div class="img-thumbnail">
+				<a href="https://ccosse.github.io/images/4_040207-8x2-fibers-hit-at-angle.png" target="_blank">
+				<img src="https://ccosse.github.io/images/4_040207-8x2-fibers-hit-at-angle.png"
+					alt="Simulated proton event traversing crossed planes of scintillating optic fibers to reval trajectory" style="height:300px">
+				</a>
+			</div>
+			<p class="text-justify">
+				<b class="text-primary">(2006)</b>
+				Simulated proton event traversing crossed planes of scintillating optic fibers in a muon tracking system.
+				C++, GEANT4, OpenSceneGraph (OpenGL).
+			</p>
+			</td>
+
+			<td>
+			<div class="img-thumbnail">
+				<a href="https://ccosse.github.io/images/physics_based_simulation_03.png" target="_blank">
+				<img src="https://ccosse.github.io/images/physics_based_simulation_03.png" alt="Integration of incompatible toolkits: GEANT4, wxWidgets, OpenSceneGraph" style="height:300px">
+				</a>
+			</div>
+			<p class="text-justify">
+				<b class="text-primary">(2007)</b>
+				Integration of incompatible C++ toolkits: OpenSceneGraph, GEANT4, X-Windows, wxWidgets.
+				Prototype work for muon camera system control application.
+			</p>
+			</td>
+
+			<td>
+			<div class="img-thumbnail">
+				<a href="https://ccosse.github.io/images/physics_based_simulation_02.gif" target="_blank">
+				<img src="https://ccosse.github.io/images/physics_based_simulation_02.gif" alt="Real-time 3D ray-traced Navier-Stokes smoke" style="height:300px">
+				</a>
+			</div>
+			<p class="text-justify">
+				<b class="text-primary">(2007-2008)</b>
+				Real-time 3D ray-traced Navier-Stokes smoke. C++ and OpenSceneGraph (OpenGL)
+			</p>
+			</td>
+
+			<td>
+			<div class="img-thumbnail">
+				<a href="https://ccosse.github.io/images/physics_based_simulation_01.png" target="_blank">
+				<img src="https://ccosse.github.io/images/physics_based_simulation_01.png" alt="3D smoke with OpenSceneGraph (OpenGL)" style="height:300px">
+				</a>
+			</div>
+			<p class="text-justify">
+				<b class="text-primary">(2007-2008)</b>
+				Real-time Navier-Stokes 3D smoke with OpenSceneGraph (OpenGL) rendered as particle system.
+				Validated physics.
+			</p>
+			</td>
+
+			</tr>
+			</div>
+
+</div>
+
+</body>
+</html>

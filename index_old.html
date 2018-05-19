@@ -1,0 +1,148 @@
+<!Doctype html>
+
+<head>
+	<meta charset="utf-8">
+	<title>C. Coss&eacute;</title>
+	<style>
+		html{
+			background-color: #FFF;
+		  font-family: Arial;
+			width:100%;
+		}
+		a{text-decoration:none}
+		.content{}
+		.imgbar{
+			background:#f8f8f8;
+			border:3px dashed #333333;
+			border-radius:10px;
+			overflow:auto;
+			/*box-shadow:0 0 10px #000;*/
+		}
+		.imgbar ul {
+			display:table;
+			white-space:nowrap;
+			list-style:none;
+		}
+		.imgbar li {
+			padding:0px 10px;
+			display:table-cell;
+			text-align:center;
+		}
+		.barimg {
+		    border: 1px solid #ddd; /* Gray border */
+		    border-radius: 4px;  /* Rounded border */
+		    padding: 5px; /* Some padding */
+		    height: 260px; /* Set a small width */
+		}
+		.mylink{font-size:14pt;}
+		</style>
+	<script type="text/javascript" src="./dist/d3.v4.min.js"></script>
+</head>
+
+<center>
+	<h3>ccosse.github.io</h3>
+	<br>
+	<div id="imgbar" class="imgbar">
+		<ul id="imgbar_ul"></ul>
+	</div>
+	<br>
+
+	<a href="https://docs.google.com/document/d/1jc-G_DBORvZMwyNkGpmVCxs5V-q3OmORty-im7TmHlU/edit?usp=sharing" target="_blank"><h2>R&eacute;sum&eacute;: Charlie Coss&eacute; 2018</h2></a>
+
+	<div id="content" class="content">
+	</div>
+
+	<h3>Javascript Portfolio Video</h3>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/0Za6c9QWKXo?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+</center>
+
+<script>
+	bar_images=[
+		"./images/depthticker02.png",
+		"./images/d3plot_session.png",
+		"./images/thesis02.png",
+		"./images/061816c.png",
+		"./images/mcs.png",
+		"./images/physics_based_simulation_04.gif",
+
+		"./images/parent-feeder.png",
+		"./images/colormyworld.png",
+		"./images/Screenshot-2018-2-14 ColorMyWorld.png",
+		"./images/serve.png",
+		"./images/Screenshot-2018-2-14 NeonTux.png",
+
+		"./images/physics_based_simulation_03.png",
+		"./images/physics_based_simulation_02.gif",
+		"./images/physics_based_simulation_01.png",
+
+		"./images/4_040207-8x2-fibers-hit-at-angle.png",
+		"./images/pdx_guild_presentation.png",
+		/*
+		"./images/7_g4humanbrainenergydeposit-081310b.png",
+		"./images/tuxwordsmith-greek.png",
+		"https://github.com/ccosse/stepintochinese/raw/master/stepintochinese.png",
+		"./images/mfc-firefox.png",
+		"./images/engaging_web_applications_01.png",
+		"./images/asymptopia-sphere.gif",
+		"./images/tux-rigging-anim.gif",
+		"./images/lcnm-rrt-nmsu-anim.gif",
+		"./images/gis_weather_web_apps.png",
+		"./images/lanwatch.png",
+		*/
+	];
+
+	var img_bar=d3.select("#imgbar")
+		.style("width","100%")
+
+	var content_div=d3.select("#content")
+		.style("width",.5*window.innerWidth+"px")
+
+	for(var bar_img of bar_images){
+		var dummy=d3.select("#imgbar_ul").append("li")
+			.append("a")
+				.attr("href",bar_img)
+				.attr("target","_blank")
+
+		dummy.append("img")
+			.attr("src",bar_img)
+			.attr("class","barimg")
+	}
+
+	var contents={
+			"Testing the new Observables":{
+				"D3js observable examples":"https://beta.observablehq.com/@ccosse",
+			},
+			"GitHub Projects":{
+				"Public repositories":"http://github.com/ccosse",
+			},
+			"CSS3 Styling with D3js":{
+				"D3js custom select":"http://bl.ocks.org/ccosse/05b5d77f17c36340ad44f47a9049ab8d",
+			},
+			"PyCon 2017 Poster & Related":{
+				"Project@github":"https://netdispenser.github.io/",
+				"PyCon blurb":"https://us.pycon.org/2017/schedule/presentation/643/",
+			},
+                        "2018 Contribution to Sugarizer":{
+                                "ColorMyWorld":"https://ccosse.github.io/colormyworld/",
+                        },
+                        "OpenSource Education Software":{
+                                "TuxMathScrabble":"http://ccosse.github.io/TuxMathScrabble-2015/",
+                                "StepIntoChinese":"https://github.com/ccosse/stepintochinese",
+                        },
+			"PyCon 2018 Coding Support":{
+				"Poster":"https://ccosse.github.io/images/PyCon18_Poster.pdf"
+			},
+	}
+
+	for(var sec of d3.keys(contents)){
+		d3.select("#content").append("h2").html(sec);
+		for(var key of d3.keys(contents[sec])){
+			d3.select("#content").append("a")
+				.attr("href",contents[sec][key])
+				.attr("class","mylink")
+				.html(key)
+			.append("br");
+		}
+	}
+	</script>
